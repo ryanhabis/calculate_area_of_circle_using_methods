@@ -1,0 +1,28 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+        double result = 0;
+        pi(result);
+    }
+
+    public static void pi(Double result)
+    {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter radius here");
+        int radius = scanner.nextInt();
+
+        double pi = 3.14;
+        double radius2 = Math.pow(radius,2);
+        double area = pi * Math.pow(radius, 2);
+
+        result =area;
+         System.out.println(result);
+    }
+}
